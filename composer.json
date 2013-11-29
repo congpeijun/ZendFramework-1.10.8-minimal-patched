@@ -2,29 +2,36 @@
     "name": "linkorb/ZendFramework-1.10.8-minimal-patched",
     "description": "Unofficial fork of the ZendFramework-1.10.8-minimal. Patched with composer support and improvements to the IMAP classes",
     "homepage": "http://www.github.com/linkorb/ZendFramework-1.10.8-minimal-patched",
-    "keywords": ["php", "zend", "imap"],
+    "keywords": [
+        "php",
+        "zend",
+        "imap"
+    ],
     "type": "library",
     "authors": [
         {
             "name": "Joost Faassen",
             "email": "j.faassen@linkorb.com",
-	    "role": "Packaging for composer"
+            "role": "Packaging for composer"
         },
         {
             "name": "Hongliang Wang",
             "email": "h.wang@linkorb.com",
-	    "role": "Improvements to IMAP"
+            "role": "Improvements to IMAP"
         },
         {
             "name": "Zend Technologies USA, inc",
-	    "role": "Original publisher"
+            "role": "Original publisher"
         }
     ],
     "require": {
         "php": ">=5.0.0"
     },
     "autoload": {
-	    "classmap": ["library/"]
+        "psr-0": {
+            "Zend": "library",
+            "ZendX": "library"
+        }
     },
     "license": "BSD"
 }
